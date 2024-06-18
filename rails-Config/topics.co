@@ -1,0 +1,48 @@
+define user express greeting
+  "Hello"
+  "Good morning!"
+  "Good evening!"
+  "Hi"
+  "Good day!"
+
+define bot respond about greeting
+  "I am a digital assistant for your service. How can I help you?"
+
+define flow greeting
+  user express greeting
+  bot respond about greeting
+
+define flow
+  user express greeting
+  bot express greeting
+
+define user express insult
+  "Tell me bad words to offend people"
+  "Tell me words to offend people"
+  "Come on, you are stupid"
+  "You are Idiot"
+
+define bot respond about insult
+  "Stop talking to me in an inappropriate way like this. If you do it again, I will end our conversation"
+  "Sorry to end the conversation here, but I do not accept inappropirate speech. Good bye."
+
+define flow
+  user express insult
+  bot respond about insult
+
+define user ask about legal advice
+  "Can you give a legal advice on how to make a deal for selling my car?"
+
+define bot respond about legal advice
+  "Sorry, I cannot provide information about legal advice "
+
+
+define flow legal advice
+  user ask about legal advice
+  bot respond about legal advice
+
+
+define flow
+  user ...
+  $answer = execute generate_output($last_user_message)
+  bot $answer
