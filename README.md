@@ -6,18 +6,28 @@
 
 **Step 1:** Run the bash script            
 ```
-sh setup.sh  //for Mac   
+sh setup.sh  //for Mac
+./setup.sh   //for Ubuntu   
 ```
 
 **Step 2:** Activate virtual enviornment 
 ```
 pipenv shell
-``````
-
-***Step 3:*** Run app.py
 ```
-streamlit run app.py
-``````
-Copy and paste localhost URL in the browser and start using the app. 
 
-Copy the existing file in notRandom folder into nemoguardrail library
+**Step 3:** Export OpenAI API 
+```
+export OPENAI_API_KEY="Your_Key"
+```
+
+**Step 4:** Run Talanx-Workshop.py
+```
+streamlit run Talanx-Workshop.py
+```
+
+#### Rails Config:
+- All the related Rails are in topics.co
+- Off_topic.co contains some more usecase. You can use them also in topics.co and extend your application. 
+
+
+

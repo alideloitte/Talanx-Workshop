@@ -45,5 +45,3 @@ prompts:
 topics:
   - name: general-topics
     path: ./rails-Config/topics.co
-#  - name: off-topic
-#    path: ./rails-Config/off_topic.co

@@ -14,6 +14,8 @@ tiktoken = "*"
 faiss-cpu = "*"
 nemoguardrails = "*"
 flask = "*"
+langchain-openai = "*"
+pypdf = "*"
 
 [dev-packages]
 
